@@ -1,0 +1,24 @@
+[project]
+name = "agno-nba"
+version = "0.1.0"
+description = "NBA-focused Agno agent with web search, learning-backed preferences, and AgentOS API"
+readme = "README.md"
+authors = [
+    { name = "Caio Sain Vallio", email = "caiosainvallio@me.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "agno>=2.0",
+    "ddgs>=9.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "psycopg[binary]>=3.2",
+    "sqlalchemy>=2.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "groq>=0.13",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.3,<0.10.0"]
+build-backend = "uv_build"
